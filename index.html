@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goofy ah sigma mewing clicker game</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            animation: color-change-2x 2s linear infinite alternate both;
+            color: #333;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #007BFF;
+        }
+
+        #pufferfish {
+            width: 250px;
+            height: 250px;
+            background-image: url("data:image/jpeg;base64,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");
+            background-size: cover;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        #pufferfish:hover {
+            transform: scale(1.1);
+        }
+
+        .upgradeButton {
+            font-size: 20px;
+            padding: 15px 25px;
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+
+        .upgradeButton:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes color-change-2x {
+            0% {
+                background: #19dcea;
+            }
+
+            100% {
+                background: #b22cff;
+            }
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>goofy ah sigma mewing clicker game</h1>
+    <div id="pufferfish" onclick="clickHandler()" style="border-radius: 50%; border: black 1px solid;"></div>
+    <div id="score" style="font-size: 24px; color: white; background-color: black; padding: 10px; margin-top: 3rem;">
+        Score: 0</div>
+    <button onclick="upgradeHandler()" id="upgradeButton" class="upgradeButton disabled" disabled>Upgrade</button>
+    <button onclick="secondUpgradeHandler()" id="secondUpgradeButton" class="upgradeButton disabled" disabled>Second
+        Upgrade</button>
+    <button onclick="autoClickerHandler()" id="autoClickerButton" class="upgradeButton disabled" disabled>Auto Clicker</button>
+    <audio src="./Sleepwalker x Icewhore SLOWED ( BEST PART ).mp3"></audio>
+    <script>
+        let score = 0;
+        let upgradeCost = 100;
+        let pointsPerClick = 1;
+        let secondUpgradeCost = 10000;
+        let pointsPerSecondUpgrade = 2;
+        let autoClickerCost = 500;
+        let autoClickerInterval;
+
+        function clickHandler() {
+            if (score < 0) {
+                return;
+            }
+            score += pointsPerClick;
+            document.getElementById('score').textContent = `Score: ${score}`;
+            saveGame();
+            enableUpgradeButton();
+            enableSecondUpgradeButton();
+            enableAutoClickerButton();
+            playPufferfishSound();
+        }
+
+        function upgradeHandler() {
+            if (score >= upgradeCost) {
+                score -= upgradeCost;
+                pointsPerClick++;
+                upgradeCost += 50;
+                document.getElementById('score').textContent = `Score: ${score}`;
+                document.getElementById('upgradeButton').textContent = `Upgrade (${upgradeCost} points)`;
+                saveGame();
+            }
+            enableUpgradeButton();
+        }
+
+        function secondUpgradeHandler() {
+            if (score >= secondUpgradeCost) {
+                score -= secondUpgradeCost;
+                pointsPerSecondUpgrade += 5;
+                secondUpgradeCost += 100;
+                document.getElementById('score').textContent = `Score: ${score}`;
+                document.getElementById('secondUpgradeButton').textContent = `Second Upgrade (${secondUpgradeCost} points)`;
+                saveGame();
+            }
+            enableSecondUpgradeButton();
+        }
+
+        function autoClickerHandler() {
+            if (score >= autoClickerCost) {
+                score -= autoClickerCost;
+                document.getElementById('score').textContent = `Score: ${score}`;
+                document.getElementById('autoClickerButton').textContent = `Auto Clicker (${autoClickerCost} points)`;
+                startAutoClicker();
+                saveGame();
+            }
+            enableAutoClickerButton();
+        }
+
+        function startAutoClicker() {
+            if (autoClickerInterval) {
+                clearInterval(autoClickerInterval);
+            }
+            autoClickerInterval = setInterval(clickHandler, 1000);
+        }
+
+        function stopAutoClicker() {
+            clearInterval(autoClickerInterval);
+        }
+
+        function enableUpgradeButton() {
+            const upgradeButton = document.getElementById('upgradeButton');
+            if (score >= upgradeCost) {
+                upgradeButton.classList.remove('disabled');
+                upgradeButton.disabled = false;
+            } else {
+                upgradeButton.classList.add('disabled');
+                upgradeButton.disabled = true;
+            }
+        }
+
+        function enableSecondUpgradeButton() {
+            const secondUpgradeButton = document.getElementById('secondUpgradeButton');
+            if (score >= secondUpgradeCost) {
+                secondUpgradeButton.classList.remove('disabled');
+                secondUpgradeButton.disabled = false;
+            } else {
+                secondUpgradeButton.classList.add('disabled');
+                secondUpgradeButton.disabled = true;
+            }
+        }
+
+        function enableAutoClickerButton() {
+            const autoClickerButton = document.getElementById('autoClickerButton');
+            if (score >= autoClickerCost) {
+                autoClickerButton.classList.remove('disabled');
+                autoClickerButton.disabled = false;
+            } else {
+                autoClickerButton.classList.add('disabled');
+                autoClickerButton.disabled = true;
+            }
+        }
+
+        function playPufferfishSound() {
+            const pufferfishSound = document.getElementById('pufferfishSound');
+            pufferfishSound.play().catch(error => {
+                console.error("Error playing pufferfish sound:", error.message);
+            });
+        }
+
+        document.body.addEventListener('click', () => {
+            const backgroundMusic = document.getElementById('backgroundMusic');
+            backgroundMusic.play().catch(error => {
+                console.error("Error playing background music:", error.message);
+            });
+        });
+
+        function saveGame() {
+            localStorage.setItem('score', score);
+            localStorage.setItem('pointsPerClick', pointsPerClick);
+            localStorage.setItem('upgradeCost', upgradeCost);
+            localStorage.setItem('pointsPerSecondUpgrade', pointsPerSecondUpgrade);
+            localStorage.setItem('secondUpgradeCost', secondUpgradeCost);
+            localStorage.setItem('autoClickerCost', autoClickerCost);
+        }
+
+        function loadGame() {
+            score = parseInt(localStorage.getItem('score')) || 0;
+            pointsPerClick = parseInt(localStorage.getItem('pointsPerClick')) || 1;
+            upgradeCost = parseInt(localStorage.getItem('upgradeCost')) || 100;
+            pointsPerSecondUpgrade = parseInt(localStorage.getItem('pointsPerSecondUpgrade')) || 2;
+            secondUpgradeCost = parseInt(localStorage.getItem('secondUpgradeCost')) || 10000;
+            autoClickerCost = parseInt(localStorage.getItem('autoClickerCost')) || 500;
+
+            document.getElementById('score').textContent = `Score: ${score}`;
+            document.getElementById('upgradeButton').textContent = `Upgrade (${upgradeCost} points)`;
+            document.getElementById('secondUpgradeButton').textContent = `Second Upgrade (${secondUpgradeCost} points)`;
+            document.getElementById('autoClickerButton').textContent = `Auto Clicker (${autoClickerCost} points)`;
+
+            enableUpgradeButton();
+            enableSecondUpgradeButton();
+            enableAutoClickerButton();
+        }
+
+        loadGame();
+    </script>
+</body>
+
+</html>
